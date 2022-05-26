@@ -65,7 +65,7 @@ ol {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .section {
@@ -317,6 +317,7 @@ ol {
 
 /* PORTFOLIO.HTML */
 
+/* RADIO-BUTTONS */
 .button {
   padding: 6px 22px;
   font-family: inherit;
@@ -358,6 +359,7 @@ ol {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* WORKS EXAMPLES */
 .works-list-title {
   font-weight: 700;
   font-size: 18px;
@@ -380,10 +382,6 @@ ol {
   margin-left: -30px;
 }
 
-.works-list-item {
-  border: 1px solid var(--border-color);
-}
-
 .works > .works-list-item {
   margin-top: 30px;
   margin-left: 30px;
@@ -392,11 +390,13 @@ ol {
 
 .works-list-desc {
   padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .works-list-img {
   display: inline-block;
-  /* overflow: hidden; */
 }
 
 /* FOOTER */
