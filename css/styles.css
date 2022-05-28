@@ -28,13 +28,13 @@ body {
   background-color: var(--main-bgc-color);
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -50,6 +50,14 @@ ol {
 .address-item,
 .buttons {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -57,7 +65,7 @@ ol {
 }
 
 .header {
-  border: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .container {
@@ -81,7 +89,6 @@ ol {
 }
 
 .logo {
-  display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -174,13 +181,10 @@ ol {
   color: var(--hero-title-color);
 }
 
-.hero.button {
+.hero-button {
   margin-top: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 0 solid transparent;
+  padding: 10px 32px;
+  border: none;
   border-radius: 4px;
 
   font-family: inherit;
@@ -191,18 +195,17 @@ ol {
 
   background-color: var(--accent-color);
   color: var(--additional-color-text);
-  border-color: var(--accent-color);
 }
 
-.hero.button:hover,
-.hero.button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--hover-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* BENEFITS */
 .benefits.section {
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 
 .benefits.list {
@@ -261,7 +264,7 @@ ol {
 
 /* WORK */
 .work.section {
-  padding-top: 47px;
+  padding-top: 0px;
 }
 
 .work.list {
@@ -277,20 +280,19 @@ ol {
 /* TEAM */
 .team {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: -10px;
-  margin-left: -10px;
   background-color: var(--additional-bgc-color);
 }
 
 .team-list-item {
   background-color: var(--main-bgc-color);
-  margin-top: 10px;
-  margin-left: 10px;
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list-item + .team-list-item {
@@ -298,7 +300,6 @@ ol {
 }
 
 .team-list-name {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -328,16 +329,12 @@ ol {
   letter-spacing: 0.03em;
   background-color: var(--button-bgc);
   border: none;
-  border-color: var(--button-bgc);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   margin-bottom: 50px;
 }
 
@@ -346,13 +343,8 @@ ol {
 }
 
 .button:hover,
-.button:focus {
-  color: var(--additional-color-text);
-  background-color: var(--hover-button);
-}
-
-.button:active,
-.button.current {
+.button:focus,
+.button:active {
   color: var(--additional-color-text);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -401,13 +393,9 @@ ol {
 
 /* FOOTER */
 .footer {
-  min-height: 252px;
-  background-color: var(--footer-bgc);
-}
-
-.footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--footer-bgc);
 }
 
 .logo-footer {
